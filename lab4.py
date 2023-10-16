@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 print(f"Task 1.1")
 ans1_1 = list(input().lower())
 print(ans1_1)
