@@ -20,8 +20,8 @@ list_symb = [i for i in ans1_2 if not i.isalpha()]
 print(list_vow, '\n', list_cons, '\n', list_symb, sep="")
 
 print(f"\nTask 1.4")
-# arr = [1, 5, 8, 7, 9, 6, 7, 5, 8, 3, 9,10,2,1,3,4]
-arr = [1, 5, 8, 7, 9, 6, 7, 5, 8, 3, 9, 10, 2, 1, 3, 4, 8]
+# arr = [1, 5, 8, 7, 9, 6, 7, 5, 8, 3, 9, 10, 2, 1, 3, 4]
+arr = [1, 5, 8, 7, 9, 6, 7, 5, 8, 3, 9, 10, 2, 1, 3, 4, 8, 9]
 addZeroCnt = 4 - len(arr) % 4
 arr += [0 for i in range(addZeroCnt)]
 arr.sort()
