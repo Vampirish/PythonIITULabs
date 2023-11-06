@@ -34,7 +34,7 @@ def get_unique_elements_with_count(listi):
 
 def get_prime_numbers(n):
     listi = []
-    for i in range(2, n):
+    for i in range(2, n+1):
         check = True
         for j in listi:
             if i % j == 0:
@@ -74,8 +74,7 @@ def sort_by_price(shopping_list):
 
 
 def get_words_starting_with_vowel(words):
-    vow = "aoieu"
-    return [i for i in words if i[0].lower() in vow]
+    return [i for i in words if i[0].lower() in "aoieu"]
 
 
 def main():
