@@ -72,7 +72,7 @@ def task2_7():
     words = [i.lower().split() for i in lines]
     for i in range(len(words)):
         for j in range(len(words[i])):
-            if words[i][j][len(words[i][j])-1] in punctuation:
+            if words[i][j][len(words[i][j]) - 1] in punctuation:
                 words[i][j] = words[i][j][:-1]
     wordsDic = {}
     for i in words:
@@ -92,7 +92,7 @@ def task2_8():
     punctuation = ".?!,;:-_'\" "
     for i in range(len(words)):
         for j in range(len(words[i])):
-            if words[i][j][len(words[i][j])-1] in punctuation:
+            if words[i][j][len(words[i][j]) - 1] in punctuation:
                 words[i][j] = words[i][j][:-1]
     longestWord = words[0][0]
     for i in words:
