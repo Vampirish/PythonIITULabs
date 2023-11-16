@@ -19,11 +19,11 @@ def task1_2():
 def task1_3():
     print(f"\n\nTask 1.3")
     data = open("data/text1.txt").read()
-    uppercaseCount = 0
+    uppercase_count = 0
     for i in range(0, len(data)):
         if data[i].isupper():
-            uppercaseCount += 1
-    print(uppercaseCount)
+            uppercase_count += 1
+    print(uppercase_count)
 
 
 def task2_4():
@@ -74,14 +74,14 @@ def task2_7():
         for j in range(len(words[i])):
             if words[i][j][len(words[i][j]) - 1] in punctuation:
                 words[i][j] = words[i][j][:-1]
-    wordsDic = {}
+    words_dic = {}
     for i in words:
         for j in i:
-            if j in wordsDic:
-                wordsDic[j] += 1
+            if j in words_dic:
+                words_dic[j] += 1
             else:
-                wordsDic[j] = 1
-    print(wordsDic)
+                words_dic[j] = 1
+    print(words_dic)
 
 
 def task2_8():
@@ -94,12 +94,12 @@ def task2_8():
         for j in range(len(words[i])):
             if words[i][j][len(words[i][j]) - 1] in punctuation:
                 words[i][j] = words[i][j][:-1]
-    longestWord = words[0][0]
+    longest_word = words[0][0]
     for i in words:
         for j in i:
-            if len(j) > len(longestWord):
-                longestWord = j
-    print(longestWord)
+            if len(j) > len(longest_word):
+                longest_word = j
+    print(longest_word)
 
 
 def task3_9():
@@ -114,13 +114,13 @@ def task3_10():
     print(f"\n\nTask 3.10")
     data = open("data/text1.txt")
     lines = data.readlines()
-    cntA = 0
-    cntB = 0
+    cnt_a = 0
+    cnt_b = 0
     for i in range(0, len(lines)):
         line = " " + lines[i].lower() + " "
-        cntA += line.count('a')
-        cntB += line.count('b')
-    print(f"a={cntA}, b={cntB}")
+        cnt_a += line.count('a')
+        cnt_b += line.count('b')
+    print(f"a={cnt_a}, b={cnt_b}")
 
 
 def main():
